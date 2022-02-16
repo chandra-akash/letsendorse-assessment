@@ -1,0 +1,81 @@
+.formSection{
+  background-color: rgba(255,255,255,0.5);
+  color: black;
+  border-radius: 10px;
+  height: 23vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.formSection>div{
+  background-color: white;
+    font-size: calc(5px + 2vmin);
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    max-height: 100px;
+    overflow-y: scroll;
+    overflow-x: clip;
+}
+.row{
+  border: 2px dotted orange;
+      --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+      /* margin-top: calc(-1 * var(--bs-gutter-y));
+      margin-right: calc(-.5 * var(--bs-gutter-x));
+      margin-left: calc(-.5 * var(--bs-gutter-x)); */
+}
+.introduction, .Location, .market, .scaleup_potential {
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    padding: 10px;
+    /* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1) */
+    box-shadow: 5px 8px 5px 9px rgb(216, 212, 212);
+    background-image: linear-gradient(27deg, #4159F1 0%, #F38FEB 46%, #FF6300 100%);
+}
+
+.introduction> div, .Location > div, .market > div, .scaleup_potential > div{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 1%;
+    padding: 10px;
+}
+.introduction > div > div, .Location > div > div, .market > div > div, .scaleup_potential > div > div{
+    padding: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+        display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.introduction > div > div > span, .Location > div > div > span, .market > div > div > span, .scaleup_potential > div > div > span, .usp>span{
+  display: flex;
+}
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(71, 61, 61);
+}
+
+input {
+    padding: 2px;
+    border-radius: 2px;
+}
+
+legend {
+    font-size: 19px;
+    font-weight: bolder;
+    padding: 3px;
+    background-color: rgb(30, 0, 68);
+    border-radius: 10px;
+    color: white;
+}
